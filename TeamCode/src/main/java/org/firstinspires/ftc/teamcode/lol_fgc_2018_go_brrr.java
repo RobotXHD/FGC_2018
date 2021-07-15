@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 @TeleOp
 
 public class lol_fgc_2018_go_brrr extends LinearOpMode {
-    AnalogInput sensorfront,sensorback,sensorright,sensorleft;
+    AnalogInput sensorfarleft,sensorfarright,sensornearright,sensornearleft;
     public DcMotorEx motorss,motords,motordf,motorsf;
     @Override
     public void runOpMode() throws InterruptedException {
@@ -16,10 +16,10 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
         motords = hardwareMap.get(DcMotorEx.class, "ds");
         motorsf = hardwareMap.get(DcMotorEx.class, "sf");
         motorss = hardwareMap.get(DcMotorEx.class, "ss");
-        sensorfront = hardwareMap.get(AnalogInput.class, "snf");
-        sensorback = hardwareMap.get(AnalogInput.class, "snb");
-        sensorright = hardwareMap.get(AnalogInput.class, "snr");
-        sensorleft = hardwareMap.get(AnalogInput.class, "snl");
+        sensorfarleft = hardwareMap.get(AnalogInput.class, "snfl");
+        sensorfarright = hardwareMap.get(AnalogInput.class, "snfr");
+        sensornearright = hardwareMap.get(AnalogInput.class, "snnr");
+        sensornearleft = hardwareMap.get(AnalogInput.class, "snnl");
 
         motords.setDirection(DcMotorEx.Direction.REVERSE);
         motorss.setDirection(DcMotorEx.Direction.REVERSE);
@@ -39,10 +39,10 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
             telemetry.addData("motorsf: ", motorsf.getCurrentPosition());
             telemetry.addData("motords: ", motords.getCurrentPosition());
             telemetry.addData("motorss: ", motorss.getCurrentPosition());
-            telemetry.addData("sensorfront: ", sensorfront.getVoltage());
-            telemetry.addData("sensorback: ", sensorback.getVoltage());
-            telemetry.addData("sensorright: ", sensorright.getVoltage());
-            telemetry.addData("sensorleft: ", sensorleft.getVoltage());
+            telemetry.addData("sensorfarleft: ", sensorfarleft.getVoltage());
+            telemetry.addData("sensorfarright: ", sensorfarright.getVoltage());
+            telemetry.addData("sensornearright: ", sensornearright.getVoltage());
+            telemetry.addData("sensornearleft: ", sensornearleft.getVoltage());
             telemetry.update();
         }
     }

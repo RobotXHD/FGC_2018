@@ -1,26 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shager\\FG_2018_Public\\first_global_sdk\\app\\ftc_app\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\Admin\\AndroidStudioProjects\\FGC_2018\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shager\\FG_2018_Public\\first_global_sdk\\lib\\RobotCore\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "187"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\shager\\FG_2018_Public\\first_global_sdk\\app\\ftc_app\\TeamCode\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\shager\\FG_2018_Public\\first_global_sdk\\lib\\RobotCore\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\430793424d070ea76a10edbbb1f2b936\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -313,6 +313,7 @@ public class FtcRobotControllerActivity extends Activity
     logPackageVersions();
     logDeviceSerialNumber();
     RobotLog.logDeviceInfo();
+
   }
 
   protected UpdateUI createUpdateUI() {

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jul 15 14:29:39 EEST 2021
+#Sat Jul 17 11:05:36 EEST 2021
 20.base=C\:\\Users\\Admin\\AndroidStudioProjects\\FGC_2018\\TeamCode\\build\\intermediates\\assets\\debug
 143.base=C\:\\Users\\Admin\\AndroidStudioProjects\\FGC_2018\\TeamCode\\build\\intermediates\\assets\\debug
 237.path=css/java/onbotjava.less

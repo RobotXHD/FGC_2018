@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :Hardware-release:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac471da990d03020a69cc9798333858a/Hardware-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac471da990d03020a69cc9798333858a/Hardware-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac471da990d03020a69cc9798333858a/Hardware-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

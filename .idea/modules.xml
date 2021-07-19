@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FGC_2018.iml" filepath="$PROJECT_DIR$/.idea/modules/FGC_2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FtcDashboard/FGC_2018.FtcDashboard.iml" filepath="$PROJECT_DIR$/.idea/modules/FtcDashboard/FGC_2018.FtcDashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FtcRobotController/FGC_2018.FtcRobotController.iml" filepath="$PROJECT_DIR$/.idea/modules/FtcRobotController/FGC_2018.FtcRobotController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TeamCode/FGC_2018.TeamCode.iml" filepath="$PROJECT_DIR$/.idea/modules/TeamCode/FGC_2018.TeamCode.iml" />
+    </modules>
+  </component>
+</project>

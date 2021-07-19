@@ -5,11 +5,28 @@
  */
 buildscript {
     repositories {
+        mavenCentral()
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:4.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    flatDir {
+        dirs '../libs'
     }
 }
 

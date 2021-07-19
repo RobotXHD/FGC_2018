@@ -122,7 +122,7 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                             }
                             systime = System.currentTimeMillis();
                             if(snfl!=0) {
-                                while (systime + 1950 > System.currentTimeMillis()) {
+                                while (systime + 1940 > System.currentTimeMillis()) {
                                     setPower(-0.1, 0.1, -0.1, 0.1);
                                 }
                             }

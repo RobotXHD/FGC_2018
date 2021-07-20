@@ -115,7 +115,7 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                 }
                 systime = System.currentTimeMillis();
                 if(active){
-                    if(Math.abs(error) > 2){
+                    if(Math.abs(error) > 9){
                         if(snnr != 0 && snnl != 0){
                             systime = System.currentTimeMillis();
                             if(snfl!=0) {
@@ -123,7 +123,7 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                                     setPower(0.1,0.1,0.1,0.1);
                                 }
                                 systime = System.currentTimeMillis();
-                                while (systime + 1940 > System.currentTimeMillis()) {
+                                while (error == 0) {
                                     setPower(-0.1, 0.1, -0.1, 0.1);
                                 }
                             }
@@ -132,12 +132,14 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                                     setPower(0.1,0.1,0.1,0.1);
                                 }
                                 systime = System.currentTimeMillis();
-                                while (systime + 1940 > System.currentTimeMillis()) {
+                                while (error == 0) {
                                     setPower(0.1, -0.1, 0.1, -0.1);
                                 }
                             }
                         }
-                        setPower(powerCorectie, powerCorectie, powerCorectie, powerCorectie);
+                        else {
+                            setPower(powerCorectie, powerCorectie, powerCorectie, powerCorectie);
+                        }
                     }
                     else{
                         setPower(conpow + powerCorectie, conpow - powerCorectie, conpow + powerCorectie, conpow - powerCorectie);

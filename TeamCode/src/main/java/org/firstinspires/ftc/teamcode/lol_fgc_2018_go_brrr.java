@@ -123,8 +123,38 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                                     setPower(0.1,0.1,0.1,0.1);
                                 }
                                 systime = System.currentTimeMillis();
-                                while (error == 0) {
-                                    setPower(-0.1, 0.1, -0.1, 0.1);
+                                if(error == -10) {
+                                    while (true) {
+                                        setPower(-0.1, 0.1, -0.1, 0.1);
+                                        if (sensorfarleft.getVoltage() < con) {
+                                            snfl = -10;
+                                        }
+                                        else {
+                                            snfl = 0;
+                                        }
+                                        if (sensorfarright.getVoltage() < con) {
+                                            snfr = 10;
+                                        }
+                                        else {
+                                            snfr = 0;
+                                        }
+                                        if (sensornearleft.getVoltage() < con) {
+                                            snnl = -1;
+                                        }
+                                        else {
+                                            snnl = 0;
+                                        }
+                                        if (sensornearright.getVoltage() < con) {
+                                            snnr = 1;
+                                        }
+                                        else {
+                                            snnr = 0;
+                                        }
+                                        error = snfl + snnl + snnr + snfr;
+                                        if(error < 0){
+                                            break;
+                                        }
+                                    }
                                 }
                             }
                             else if(snfr!=0){
@@ -132,8 +162,38 @@ public class lol_fgc_2018_go_brrr extends LinearOpMode {
                                     setPower(0.1,0.1,0.1,0.1);
                                 }
                                 systime = System.currentTimeMillis();
-                                while (error == 0) {
-                                    setPower(0.1, -0.1, 0.1, -0.1);
+                                if(error == 10) {
+                                    while (true) {
+                                        setPower(0.1, -0.1, 0.1, -0.1);
+                                        if (sensorfarleft.getVoltage() < con) {
+                                            snfl = -10;
+                                        }
+                                        else {
+                                            snfl = 0;
+                                        }
+                                        if (sensorfarright.getVoltage() < con) {
+                                            snfr = 10;
+                                        }
+                                        else {
+                                            snfr = 0;
+                                        }
+                                        if (sensornearleft.getVoltage() < con) {
+                                            snnl = -1;
+                                        }
+                                        else {
+                                            snnl = 0;
+                                        }
+                                        if (sensornearright.getVoltage() < con) {
+                                            snnr = 1;
+                                        }
+                                        else {
+                                            snnr = 0;
+                                        }
+                                        error = snfl + snnl + snnr + snfr;
+                                        if(error > 0){
+                                            break;
+                                        }
+                                    }
                                 }
                             }
                         }
